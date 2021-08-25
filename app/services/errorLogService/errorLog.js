@@ -54,5 +54,9 @@ class Error{
             return res.status(500).json({"status":false,"message":"Error occurred in DB","error_obj":errorCodes.INTERNAL_SERVER_ERROR});
         }
     }
+    static async fetchError(req,res){
+        let errors = await ErrorLog.find({request_id:req.query.request_id});
+        return res.status(200).json({"status":true,"data":errors ,"message": "error retrieved succesfully"});
+    }
 }
 module.exports=Error;

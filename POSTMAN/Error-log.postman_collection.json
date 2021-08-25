@@ -1,0 +1,566 @@
+{
+	"info": {
+		"_postman_id": "c8544e73-0fbf-4b22-94fb-7c5d13c45fc4",
+		"name": "Error-log",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:3030/api/product-service/v1/products/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"iphone\",\r\n    \"price\":\"49,999.00\",\r\n    \"weight\":\"500gm\",\r\n    \"type\":\"physical\",\r\n    \"user_id\":\"kausic223\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3030/api/product-service/v1/products/create",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"api",
+						"product-service",
+						"v1",
+						"products",
+						"create"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:3030/api/product-service/v1/products/create",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"iphone\",\r\n    \"price\":\"49,999.00\",\r\n    \"weight\":\"500gm\",\r\n    \"type\":\"physical\",\r\n    \"user_id\":\"kausic223\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3030/api/product-service/v1/products/create",
+							"host": [
+								"localhost"
+							],
+							"port": "3030",
+							"path": [
+								"api",
+								"product-service",
+								"v1",
+								"products",
+								"create"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "192"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c0-cT44j2z6Qe9N8oM1aL+3EEzKNQk\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 25 Aug 2021 07:14:09 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"data\": {\n        \"_id\": \"6125edc1843698150494bfe5\",\n        \"name\": \"iphone\",\n        \"price\": \"49,999.00\",\n        \"weight\": \"500gm\",\n        \"type\": \"physical\",\n        \"user_id\": \"kausic223\"\n    },\n    \"message\": \"product is added successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "localhost:3030/api/product-service/v1/products/create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-correlation-id",
+						"value": "cksqyfdy200006gwac6ex5a6e",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"iphone\",\r\n    \"price\":\"49,999.00\",\r\n    \"weight\":\"500gm\",\r\n    \"user_id\":\"kausic223\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3030/api/product-service/v1/products/create",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"api",
+						"product-service",
+						"v1",
+						"products",
+						"create"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:3030/api/product-service/v1/products/create",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-correlation-id",
+								"value": "cksqyfdy200006gwac6ex5a6e",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"iphone\",\r\n    \"price\":\"49,999.00\",\r\n    \"weight\":\"500gm\",\r\n    \"user_id\":\"kausic223\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3030/api/product-service/v1/products/create",
+							"host": [
+								"localhost"
+							],
+							"port": "3030",
+							"path": [
+								"api",
+								"product-service",
+								"v1",
+								"products",
+								"create"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "140"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"8c-eMPLtAW9TZOCeFlexjS4zgO3BYk\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 25 Aug 2021 07:16:59 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": false,\n    \"message\": \"Missing fields in payload\",\n    \"error_obj\": {\n        \"error_code\": \"SUB_VALIDATION\",\n        \"description\": \"Payload validation failed\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "localhost:3030/api/errorlog-service/v1/errors/getAllErrorLogs",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3030/api/errorlog-service/v1/errors/getAllErrorLogs",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"api",
+						"errorlog-service",
+						"v1",
+						"errors",
+						"getAllErrorLogs"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:3030/api/errorlog-service/v1/errors/getAllErrorLogs",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:3030/api/errorlog-service/v1/errors/getAllErrorLogs",
+							"host": [
+								"localhost"
+							],
+							"port": "3030",
+							"path": [
+								"api",
+								"errorlog-service",
+								"v1",
+								"errors",
+								"getAllErrorLogs"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "3670"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"e56-K6Jw44MrNDzPFXEbVIPIVn8WfKM\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 25 Aug 2021 07:17:18 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"data\": [\n        {\n            \"_id\": \"61248d3e9bf4302fa04bf42f\",\n            \"request_id\": \"10400\",\n            \"user_id\": \"kishore240\",\n            \"version\": \"v1\",\n            \"microservice_name\": \"product-service\",\n            \"module\": \"products\",\n            \"path\": \"/create\",\n            \"status_code\": \"400\",\n            \"error_msg\": \"Missing fields in payload\",\n            \"error_obj\": {\n                \"error_code\": \"SUB_VALIDATION\",\n                \"description\": \"Payload validation failed\"\n            },\n            \"createdAt\": \"2021-08-24T06:10:06.436Z\",\n            \"updatedAt\": \"2021-08-24T06:10:06.436Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"61248d529bf4302fa04bf432\",\n            \"request_id\": \"10500\",\n            \"user_id\": \"kausic223\",\n            \"version\": \"v1\",\n            \"microservice_name\": \"errorlog-service\",\n            \"module\": \"errors\",\n            \"path\": \"/deleteErrorLog\",\n            \"status_code\": \"500\",\n            \"error_msg\": \"Invalid User Id\",\n            \"error_obj\": {\n                \"error_code\": \"SUB_ID\",\n                \"description\": \"Object with following id doesn't exist.\"\n            },\n            \"createdAt\": \"2021-08-24T06:10:26.571Z\",\n            \"updatedAt\": \"2021-08-24T06:10:26.571Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"61248dc29bf4302fa04bf435\",\n            \"request_id\": \"10400\",\n            \"user_id\": \"kausic223\",\n            \"version\": \"v1\",\n            \"microservice_name\": \"product-service\",\n            \"module\": \"products\",\n            \"path\": \"/create\",\n            \"status_code\": \"400\",\n            \"error_msg\": \"Missing fields in payload\",\n            \"error_obj\": {\n                \"error_code\": \"SUB_VALIDATION\",\n                \"description\": \"Payload validation failed\"\n            },\n            \"createdAt\": \"2021-08-24T06:12:18.455Z\",\n            \"updatedAt\": \"2021-08-24T06:12:18.455Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6125c9cbe3d8532d14835124\",\n            \"request_id\": \"11400\",\n            \"user_id\": \"jagan235\",\n            \"version\": \"v1\",\n            \"microservice_name\": \"product-service\",\n            \"module\": \"products\",\n            \"path\": \"/create\",\n            \"status_code\": \"400\",\n            \"error_msg\": \"Missing fields in payload\",\n            \"error_obj\": {\n                \"error_code\": \"SUB_VALIDATION\",\n                \"description\": \"Payload validation failed\"\n            },\n            \"createdAt\": \"2021-08-25T04:40:43.571Z\",\n            \"updatedAt\": \"2021-08-25T04:40:43.571Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6125ca6e7f4cbf5cd09fe857\",\n            \"request_id\": \"10400\",\n            \"user_id\": \"jagan235\",\n            \"version\": \"v1\",\n            \"microservice_name\": \"product-service\",\n            \"module\": \"products\",\n            \"path\": \"/create\",\n            \"status_code\": \"400\",\n            \"error_msg\": \"Missing fields in payload\",\n            \"error_obj\": {\n                \"error_code\": \"SUB_VALIDATION\",\n                \"description\": \"Payload validation failed\"\n            },\n            \"createdAt\": \"2021-08-25T04:43:26.374Z\",\n            \"updatedAt\": \"2021-08-25T04:43:26.374Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6125ca92cdbaad3ca8ac327c\",\n            \"request_id\": \"11400\",\n            \"user_id\": \"jagan235\",\n            \"version\": \"v1\",\n            \"microservice_name\": \"product-service\",\n            \"module\": \"products\",\n            \"path\": \"/create\",\n            \"status_code\": \"400\",\n            \"error_msg\": \"Missing fields in payload\",\n            \"error_obj\": {\n                \"error_code\": \"SUB_VALIDATION\",\n                \"description\": \"Payload validation failed\"\n            },\n            \"createdAt\": \"2021-08-25T04:44:02.984Z\",\n            \"updatedAt\": \"2021-08-25T04:44:02.984Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6125ca9dcdbaad3ca8ac327e\",\n            \"request_id\": \"10400\",\n            \"user_id\": \"jagan235\",\n            \"version\": \"v1\",\n            \"microservice_name\": \"product-service\",\n            \"module\": \"products\",\n            \"path\": \"/create\",\n            \"status_code\": \"400\",\n            \"error_msg\": \"Missing fields in payload\",\n            \"error_obj\": {\n                \"error_code\": \"SUB_VALIDATION\",\n                \"description\": \"Payload validation failed\"\n            },\n            \"createdAt\": \"2021-08-25T04:44:13.249Z\",\n            \"updatedAt\": \"2021-08-25T04:44:13.249Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6125caf4cdbaad3ca8ac3280\",\n            \"request_id\": \"10400\",\n            \"user_id\": \"kausic223\",\n            \"version\": \"v1\",\n            \"microservice_name\": \"product-service\",\n            \"module\": \"products\",\n            \"path\": \"/create\",\n            \"status_code\": \"400\",\n            \"error_msg\": \"Missing fields in payload\",\n            \"error_obj\": {\n                \"error_code\": \"SUB_VALIDATION\",\n                \"description\": \"Payload validation failed\"\n            },\n            \"createdAt\": \"2021-08-25T04:45:40.308Z\",\n            \"updatedAt\": \"2021-08-25T04:45:40.308Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6125ee6b843698150494bfe7\",\n            \"request_id\": \"10400\",\n            \"user_id\": \"kausic223\",\n            \"version\": \"v1\",\n            \"microservice_name\": \"product-service\",\n            \"module\": \"products\",\n            \"path\": \"/create\",\n            \"status_code\": \"400\",\n            \"error_msg\": \"Missing fields in payload\",\n            \"error_obj\": {\n                \"error_code\": \"SUB_VALIDATION\",\n                \"description\": \"Payload validation failed\"\n            },\n            \"createdAt\": \"2021-08-25T07:16:59.700Z\",\n            \"updatedAt\": \"2021-08-25T07:16:59.700Z\",\n            \"__v\": 0\n        }\n    ],\n    \"message\": \"All errors retrieved successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "localhost:3030/api/errorlog-service/v1/errors/deleteErrorLog?user_id=kausic115",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3030/api/errorlog-service/v1/errors/deleteErrorLog?user_id=kausic115",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"api",
+						"errorlog-service",
+						"v1",
+						"errors",
+						"deleteErrorLog"
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "kausic115"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:3030/api/errorlog-service/v1/errors/deleteErrorLog?user_id=kausic115",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3030/api/errorlog-service/v1/errors/deleteErrorLog?user_id=kausic115",
+							"host": [
+								"localhost"
+							],
+							"port": "3030",
+							"path": [
+								"api",
+								"errorlog-service",
+								"v1",
+								"errors",
+								"deleteErrorLog"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "kausic115"
+								}
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "136"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"88-MAPZSkyu9kQML3YU/mMtaN9yikM\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 25 Aug 2021 07:17:35 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": false,\n    \"message\": \"Invalid User Id\",\n    \"error_obj\": {\n        \"error_code\": \"SUB_ID\",\n        \"description\": \"Object with following id doesn't exist.\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "localhost:3030/api/errorlog-service/v1/errors/todayErrorLogs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3030/api/errorlog-service/v1/errors/todayErrorLogs",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"api",
+						"errorlog-service",
+						"v1",
+						"errors",
+						"todayErrorLogs"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:3030/api/errorlog-service/v1/errors/todayErrorLogs",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3030/api/errorlog-service/v1/errors/todayErrorLogs",
+							"host": [
+								"localhost"
+							],
+							"port": "3030",
+							"path": [
+								"api",
+								"errorlog-service",
+								"v1",
+								"errors",
+								"todayErrorLogs"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2875"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"b3b-6WgDLBXg5QMud4Mf+yKIDBBZnwE\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 25 Aug 2021 07:18:02 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"data\": [\n        {\n            \"_id\": \"6125c9cbe3d8532d14835124\",\n            \"request_id\": \"11400\",\n            \"user_id\": \"jagan235\",\n            \"version\": \"v1\",\n            \"microservice_name\": \"product-service\",\n            \"module\": \"products\",\n            \"path\": \"/create\",\n            \"status_code\": \"400\",\n            \"error_msg\": \"Missing fields in payload\",\n            \"error_obj\": {\n                \"error_code\": \"SUB_VALIDATION\",\n                \"description\": \"Payload validation failed\"\n            },\n            \"createdAt\": \"2021-08-25T04:40:43.571Z\",\n            \"updatedAt\": \"2021-08-25T04:40:43.571Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6125ca6e7f4cbf5cd09fe857\",\n            \"request_id\": \"10400\",\n            \"user_id\": \"jagan235\",\n            \"version\": \"v1\",\n            \"microservice_name\": \"product-service\",\n            \"module\": \"products\",\n            \"path\": \"/create\",\n            \"status_code\": \"400\",\n            \"error_msg\": \"Missing fields in payload\",\n            \"error_obj\": {\n                \"error_code\": \"SUB_VALIDATION\",\n                \"description\": \"Payload validation failed\"\n            },\n            \"createdAt\": \"2021-08-25T04:43:26.374Z\",\n            \"updatedAt\": \"2021-08-25T04:43:26.374Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6125ca92cdbaad3ca8ac327c\",\n            \"request_id\": \"11400\",\n            \"user_id\": \"jagan235\",\n            \"version\": \"v1\",\n            \"microservice_name\": \"product-service\",\n            \"module\": \"products\",\n            \"path\": \"/create\",\n            \"status_code\": \"400\",\n            \"error_msg\": \"Missing fields in payload\",\n            \"error_obj\": {\n                \"error_code\": \"SUB_VALIDATION\",\n                \"description\": \"Payload validation failed\"\n            },\n            \"createdAt\": \"2021-08-25T04:44:02.984Z\",\n            \"updatedAt\": \"2021-08-25T04:44:02.984Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6125ca9dcdbaad3ca8ac327e\",\n            \"request_id\": \"10400\",\n            \"user_id\": \"jagan235\",\n            \"version\": \"v1\",\n            \"microservice_name\": \"product-service\",\n            \"module\": \"products\",\n            \"path\": \"/create\",\n            \"status_code\": \"400\",\n            \"error_msg\": \"Missing fields in payload\",\n            \"error_obj\": {\n                \"error_code\": \"SUB_VALIDATION\",\n                \"description\": \"Payload validation failed\"\n            },\n            \"createdAt\": \"2021-08-25T04:44:13.249Z\",\n            \"updatedAt\": \"2021-08-25T04:44:13.249Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6125caf4cdbaad3ca8ac3280\",\n            \"request_id\": \"10400\",\n            \"user_id\": \"kausic223\",\n            \"version\": \"v1\",\n            \"microservice_name\": \"product-service\",\n            \"module\": \"products\",\n            \"path\": \"/create\",\n            \"status_code\": \"400\",\n            \"error_msg\": \"Missing fields in payload\",\n            \"error_obj\": {\n                \"error_code\": \"SUB_VALIDATION\",\n                \"description\": \"Payload validation failed\"\n            },\n            \"createdAt\": \"2021-08-25T04:45:40.308Z\",\n            \"updatedAt\": \"2021-08-25T04:45:40.308Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6125ee6b843698150494bfe7\",\n            \"request_id\": \"10400\",\n            \"user_id\": \"kausic223\",\n            \"version\": \"v1\",\n            \"microservice_name\": \"product-service\",\n            \"module\": \"products\",\n            \"path\": \"/create\",\n            \"status_code\": \"400\",\n            \"error_msg\": \"Missing fields in payload\",\n            \"error_obj\": {\n                \"error_code\": \"SUB_VALIDATION\",\n                \"description\": \"Payload validation failed\"\n            },\n            \"createdAt\": \"2021-08-25T07:16:59.700Z\",\n            \"updatedAt\": \"2021-08-25T07:16:59.700Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6125ee8f843698150494bfeb\",\n            \"request_id\": \"11500\",\n            \"user_id\": \"kausic115\",\n            \"version\": \"v1\",\n            \"microservice_name\": \"errorlog-service\",\n            \"module\": \"errors\",\n            \"path\": \"/deleteErrorLog\",\n            \"status_code\": \"500\",\n            \"error_msg\": \"Invalid User Id\",\n            \"error_obj\": {\n                \"error_code\": \"SUB_ID\",\n                \"description\": \"Object with following id doesn't exist.\"\n            },\n            \"createdAt\": \"2021-08-25T07:17:35.300Z\",\n            \"updatedAt\": \"2021-08-25T07:17:35.300Z\",\n            \"__v\": 0\n        }\n    ],\n    \"message\": \"Successfully retrieved today error logs\"\n}"
+				}
+			]
+		},
+		{
+			"name": "localhost:3030/api/errorlog-service/v1/errors/fetch?request_id=10400",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3030/api/errorlog-service/v1/errors/fetch?request_id=10400",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"api",
+						"errorlog-service",
+						"v1",
+						"errors",
+						"fetch"
+					],
+					"query": [
+						{
+							"key": "request_id",
+							"value": "10400"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:3030/api/errorlog-service/v1/errors/fetch?request_id=10400",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3030/api/errorlog-service/v1/errors/fetch?request_id=10400",
+							"host": [
+								"localhost"
+							],
+							"port": "3030",
+							"path": [
+								"api",
+								"errorlog-service",
+								"v1",
+								"errors",
+								"fetch"
+							],
+							"query": [
+								{
+									"key": "request_id",
+									"value": "10400"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2463"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"99f-u26eyykWIznCuKH5D7j82FBpMWY\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 25 Aug 2021 07:18:18 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"data\": [\n        {\n            \"_id\": \"61248d3e9bf4302fa04bf42f\",\n            \"request_id\": \"10400\",\n            \"user_id\": \"kishore240\",\n            \"version\": \"v1\",\n            \"microservice_name\": \"product-service\",\n            \"module\": \"products\",\n            \"path\": \"/create\",\n            \"status_code\": \"400\",\n            \"error_msg\": \"Missing fields in payload\",\n            \"error_obj\": {\n                \"error_code\": \"SUB_VALIDATION\",\n                \"description\": \"Payload validation failed\"\n            },\n            \"createdAt\": \"2021-08-24T06:10:06.436Z\",\n            \"updatedAt\": \"2021-08-24T06:10:06.436Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"61248dc29bf4302fa04bf435\",\n            \"request_id\": \"10400\",\n            \"user_id\": \"kausic223\",\n            \"version\": \"v1\",\n            \"microservice_name\": \"product-service\",\n            \"module\": \"products\",\n            \"path\": \"/create\",\n            \"status_code\": \"400\",\n            \"error_msg\": \"Missing fields in payload\",\n            \"error_obj\": {\n                \"error_code\": \"SUB_VALIDATION\",\n                \"description\": \"Payload validation failed\"\n            },\n            \"createdAt\": \"2021-08-24T06:12:18.455Z\",\n            \"updatedAt\": \"2021-08-24T06:12:18.455Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6125ca6e7f4cbf5cd09fe857\",\n            \"request_id\": \"10400\",\n            \"user_id\": \"jagan235\",\n            \"version\": \"v1\",\n            \"microservice_name\": \"product-service\",\n            \"module\": \"products\",\n            \"path\": \"/create\",\n            \"status_code\": \"400\",\n            \"error_msg\": \"Missing fields in payload\",\n            \"error_obj\": {\n                \"error_code\": \"SUB_VALIDATION\",\n                \"description\": \"Payload validation failed\"\n            },\n            \"createdAt\": \"2021-08-25T04:43:26.374Z\",\n            \"updatedAt\": \"2021-08-25T04:43:26.374Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6125ca9dcdbaad3ca8ac327e\",\n            \"request_id\": \"10400\",\n            \"user_id\": \"jagan235\",\n            \"version\": \"v1\",\n            \"microservice_name\": \"product-service\",\n            \"module\": \"products\",\n            \"path\": \"/create\",\n            \"status_code\": \"400\",\n            \"error_msg\": \"Missing fields in payload\",\n            \"error_obj\": {\n                \"error_code\": \"SUB_VALIDATION\",\n                \"description\": \"Payload validation failed\"\n            },\n            \"createdAt\": \"2021-08-25T04:44:13.249Z\",\n            \"updatedAt\": \"2021-08-25T04:44:13.249Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6125caf4cdbaad3ca8ac3280\",\n            \"request_id\": \"10400\",\n            \"user_id\": \"kausic223\",\n            \"version\": \"v1\",\n            \"microservice_name\": \"product-service\",\n            \"module\": \"products\",\n            \"path\": \"/create\",\n            \"status_code\": \"400\",\n            \"error_msg\": \"Missing fields in payload\",\n            \"error_obj\": {\n                \"error_code\": \"SUB_VALIDATION\",\n                \"description\": \"Payload validation failed\"\n            },\n            \"createdAt\": \"2021-08-25T04:45:40.308Z\",\n            \"updatedAt\": \"2021-08-25T04:45:40.308Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"6125ee6b843698150494bfe7\",\n            \"request_id\": \"10400\",\n            \"user_id\": \"kausic223\",\n            \"version\": \"v1\",\n            \"microservice_name\": \"product-service\",\n            \"module\": \"products\",\n            \"path\": \"/create\",\n            \"status_code\": \"400\",\n            \"error_msg\": \"Missing fields in payload\",\n            \"error_obj\": {\n                \"error_code\": \"SUB_VALIDATION\",\n                \"description\": \"Payload validation failed\"\n            },\n            \"createdAt\": \"2021-08-25T07:16:59.700Z\",\n            \"updatedAt\": \"2021-08-25T07:16:59.700Z\",\n            \"__v\": 0\n        }\n    ],\n    \"message\": \"error retrieved succesfully\"\n}"
+				}
+			]
+		}
+	]
+}

@@ -53,4 +53,14 @@ router.get('/todayErrorLogs',async(req,res)=>{
     }
 });
 
+//get specific error based on request_id
+router.get('/fetch', async(req,res)=>{
+try{
+    Error.fetchError(req, res);
+}
+catch(err){
+    res.status(500).json({"status":false, "message":"Api event execution failed", "error_obj":errorCodes.API_ERROR});
+}
+})
+
 module.exports = router;
